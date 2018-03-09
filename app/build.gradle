@@ -43,9 +43,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
-
     compile 'com.didi.virtualapk:core:0.9.1'
     compile 'com.hongfans:common:1.0.0'
+    compile project(':usage')
 }

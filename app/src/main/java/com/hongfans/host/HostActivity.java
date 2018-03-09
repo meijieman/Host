@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.didi.virtualapk.PluginManager;
+import com.hongfans.common.log.LogUtil;
+import com.hongfans.usage.Andy;
 
 import java.io.File;
 
@@ -24,6 +26,8 @@ public class HostActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_load).setOnClickListener(this);
         findViewById(R.id.btn_start).setOnClickListener(this);
+
+        LogUtil.w("Host 调用公用库 " + Andy.getName());
     }
 
     @Override

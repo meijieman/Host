@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.hongfans.common.log.LogUtil;
+import com.hongfans.usage.Andy;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,5 +16,7 @@ public class MainActivity extends AppCompatActivity {
         LogUtil.i("onCreate ");
 
         setTitle("Plugin");
+
+        LogUtil.w("插件 调用公用库 " + Andy.getName());
     }
 }
