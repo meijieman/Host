@@ -30,8 +30,8 @@ android {
         }
         release {
             // 加入compile 'com.hongfans:common:1.0.0' 后 开启会报错 Error:Execution failed for task ':app:transformClassesAndResourcesWithProguardForRelease'.
-            minifyEnabled false
-            shrinkResources false
+            minifyEnabled true
+            shrinkResources true
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -46,6 +46,8 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.didi.virtualapk:core:0.9.1'
-    compile 'com.hongfans:common:1.0.0'
+//    compile 'com.hongfans:common:1.0.1'
     compile project(':usage')
+//    compile project(':lib-liteorm')
+    compile files('libs/lite-orm-1.9.2.jar')
 }

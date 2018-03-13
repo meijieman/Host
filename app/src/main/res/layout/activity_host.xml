@@ -22,4 +22,9 @@
             android:text="start"
             android:id="@+id/btn_start"/>
 
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="insert"
+            android:id="@+id/btn_insert"/>
+
 </LinearLayout>

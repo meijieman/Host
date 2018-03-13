@@ -29,6 +29,12 @@
 -dontwarn android.content.pm.**
 -keep class android.** { *; }
 
--dontwarn com.hongfans.common.**
--keep class com.hongfans.common.** {*;}
+
+
+-dontwarn com.litesuits.orm.**
+-keep public class com.litesuits.** { *;}
+
+#避免混淆泛型 如果混淆报错建议关掉
+-keepattributes Signature
+-keepattributes Exceptions
 

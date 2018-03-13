@@ -2,10 +2,8 @@ package com.hongfans.host;
 
 import android.app.Application;
 import android.content.Context;
-import android.util.Log;
 
 import com.didi.virtualapk.PluginManager;
-import com.hongfans.common.log.LogUtil;
 
 /**
  * TODO

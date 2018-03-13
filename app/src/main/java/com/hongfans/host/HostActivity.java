@@ -10,14 +10,16 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.didi.virtualapk.PluginManager;
-import com.hongfans.common.log.LogUtil;
 import com.hongfans.usage.Andy;
+import com.litesuits.orm.LiteOrm;
 
 import java.io.File;
 
 public class HostActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String PACKAGE_NAME = "com.hongfans.plugin";
+
+    private LiteOrm mLiteOrm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,10 @@ public class HostActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_load).setOnClickListener(this);
         findViewById(R.id.btn_start).setOnClickListener(this);
+        findViewById(R.id.btn_insert).setOnClickListener(this);
+
+        mLiteOrm = LiteOrm.newSingleInstance(this, "host.db");
+        mLiteOrm.setDebugged(true);
 
         LogUtil.w("Host 调用公用库 " + Andy.getName());
     }
@@ -62,13 +68,21 @@ public class HostActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(this, "插件未加载", Toast.LENGTH_SHORT).show();
                 }
                 break;
+            case R.id.btn_insert:
+                Person p = new Person();
+                p.setName("andy");
+                p.setAge(28);
+                p.setMale(true);
+                LogUtil.w("liteOrm " + mLiteOrm);
+                long insert = mLiteOrm.insert(p);
+                LogUtil.w("insert " + insert);
+                break;
             default:
-
                 break;
         }
     }
 
-    public static boolean isLoaded(Context context, String pkgName){
-         return PluginManager.getInstance(context).getLoadedPlugin(pkgName) != null;
+    public static boolean isLoaded(Context context, String pkgName) {
+        return PluginManager.getInstance(context).getLoadedPlugin(pkgName) != null;
     }
 }
