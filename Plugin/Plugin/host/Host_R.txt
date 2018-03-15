@@ -425,7 +425,12 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f02003a
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f02003b
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f02003c
 int drawable abc_textfield_search_material 0x7f02003d
-int drawable notification_template_icon_bg 0x7f02003e
+int drawable ic_empty 0x7f02003e
+int drawable ic_error 0x7f02003f
+int drawable ic_loading_1 0x7f020040
+int drawable ic_loading_logo 0x7f020041
+int drawable loading_pb 0x7f020042
+int drawable notification_template_icon_bg 0x7f020043
 int id action0 0x7f0c0050
 int id action_bar 0x7f0c003e
 int id action_bar_activity_content 0x7f0c0000

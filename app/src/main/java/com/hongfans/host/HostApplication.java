@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.didi.virtualapk.PluginManager;
+import com.hongfans.common.log.LogUtil;
 
 /**
  * TODO

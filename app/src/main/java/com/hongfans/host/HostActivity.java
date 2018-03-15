@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.didi.virtualapk.PluginManager;
+import com.hongfans.common.log.LogUtil;
 import com.hongfans.usage.Andy;
 import com.litesuits.orm.LiteOrm;
 

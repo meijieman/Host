@@ -2,6 +2,8 @@ package com.hongfans.plugin;
 
 import android.app.Application;
 
+import com.hongfans.common.log.LogUtil;
+
 /**
  * TODO
  * Created by MEI on 2018/3/9.

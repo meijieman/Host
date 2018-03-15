@@ -3,3 +3,13 @@ com.android.support:appcompat-v7:23.0.1 859735
 com.android.support:support-annotations:23.0.1 19096
 com.android.support:support-v4:23.0.1 1112728
 com.didi.virtualapk:core:0.9.1 86829
+com.google.code.gson:gson:2.8.1 232620
+com.hongfans:common:1.0.1 172243
+com.squareup.okhttp3:okhttp:3.9.1 406252
+com.squareup.okio:okio:1.13.0 81811
+com.squareup.retrofit2:adapter-rxjava:2.3.0 16908
+com.squareup.retrofit2:converter-gson:2.3.0 5852
+com.squareup.retrofit2:converter-scalars:2.3.0 13161
+com.squareup.retrofit2:retrofit:2.3.0 90692
+io.reactivex:rxandroid:1.2.1 9693
+io.reactivex:rxjava:1.3.0 1155595

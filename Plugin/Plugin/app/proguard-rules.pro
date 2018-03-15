@@ -131,7 +131,7 @@
 
 #--------------
 -dontwarn com.litesuits.orm.**
--keep public class com.litesuits.** { *;}
+-keep public class com.litesuits.orm.** { *;}
 
 #避免混淆泛型 如果混淆报错建议关掉
 -keepattributes Signature

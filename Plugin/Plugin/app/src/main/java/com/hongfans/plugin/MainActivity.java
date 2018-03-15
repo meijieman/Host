@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.hongfans.common.log.LogUtil;
 import com.hongfans.usage.Andy;
 import com.litesuits.orm.LiteOrm;
 
